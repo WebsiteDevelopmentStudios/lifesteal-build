@@ -1,5 +1,5 @@
 name: LifeSteal
-version: '$' + '{project.version}'
+version: '${project.version}'
 main: dev.lifesteal.LifeStealPlugin
 api-version: '26.3'
 author: WebsiteDevelopmentStudios
