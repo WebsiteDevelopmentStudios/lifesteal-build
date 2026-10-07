@@ -1,7 +1,7 @@
-# LifeSteal (Paper 26.3)
+# LifeSteal
 
-Build (needs JDK 25 + Maven):
+Paper 26.3 LifeSteal plugin targeting Java 25.
 
-    mvn clean package
+The project has no runtime dependencies other than the Paper API. GitHub Actions builds it automatically with Temurin 25 and uploads the plugin JAR as an artifact.
 
-Jar: target/LifeSteal-1.0.0.jar -> put in your server's plugins/ folder.
+LifeSteal is enabled only in the configured worlds (default: LifeSteal). LifeSteal state is stored in the configured LifeSteal world's lifesteal-data directory; non-LifeSteal state is stored in the plugin's outside-state directory.
