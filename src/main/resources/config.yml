@@ -1,0 +1,73 @@
+worlds:
+  enabled:
+    - LifeSteal
+
+hearts:
+  starting: 10
+  max: 20
+  minimum-withdraw: 1
+  steal-on-kill: 1
+  natural-death-cost: 1
+
+elimination:
+  mode: spectator
+  world: LifeSteal
+  spectator-location: spawn
+  respawn-world: LifeSteal
+
+state:
+  teleport-to-saved-location-on-return: true
+  teleport-to-saved-location-outside: false
+
+items:
+  heart:
+    material: NETHER_STAR
+    name: '&cHeart'
+    lore:
+      - '&7Right-click to gain &c1 heart&7.'
+    custom-model-data: 0
+  revive-crystal:
+    material: AMETHYST_SHARD
+    name: '&dRevive Crystal'
+    lore:
+      - '&7Right-click to revive an eliminated player.'
+  revive-hearts: 5
+
+recipes:
+  heart:
+    enabled: true
+    shape: [" G ","GNG"," G "]
+    ingredients:
+      G: GOLD_BLOCK
+      N: NETHER_STAR
+  revive-crystal:
+    enabled: true
+    shape: ["DED","EHE","DED"]
+    ingredients:
+      D: DIAMOND
+      E: EMERALD
+      H: HEART_ITEM
+
+messages:
+  prefix: '&8[&cLifeSteal&8] &r'
+  no-permission: '&cYou do not have permission.'
+  only-world: '&cLifeSteal is not active in this world.'
+  hearts: '&7%player% has &c%hearts% hearts&7.'
+  heart-gained: '&aYou gained a heart. &7You now have &c%hearts%&7.'
+  max-hearts: '&cYou are already at the maximum hearts.'
+  heart-withdrawn: '&7You withdrew &c%amount% hearts&7.'
+  not-enough-hearts: '&cYou cannot withdraw that many hearts.'
+  killed: '&cYou stole a heart from &f%victim%&c.'
+  lost-heart: '&cYou lost a heart. &7You now have &c%hearts%&7.'
+  eliminated: '&cYou have been eliminated.'
+  killer-max: '&7You were at max hearts, so a heart item dropped instead.'
+  revived: '&a%player% has been revived with &c%hearts% hearts&a.'
+  you-revived: '&aYou have been revived with &c%hearts% hearts&a.'
+  no-eliminated: '&cThere are no eliminated players.'
+  crystal-used: '&dThe Revive Crystal was consumed.'
+  invalid-player: '&cPlayer not found.'
+  reload: '&aConfiguration reloaded.'
+  usage: '&cUsage: %usage%'
+  admin-success: '&aOperation complete.'
+  invalid-number: '&cInvalid number.'
+  list-header: '&6LifeSteal players:'
