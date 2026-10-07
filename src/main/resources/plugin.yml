@@ -1,0 +1,47 @@
+name: LifeSteal
+version: '$' + '{project.version}'
+main: dev.lifesteal.LifeStealPlugin
+api-version: '26.3'
+author: WebsiteDevelopmentStudios
+description: Configurable LifeSteal plugin with isolated world state.
+commands:
+  hearts:
+    description: Show hearts
+    usage: /hearts [player]
+    aliases: [heart]
+  withdrawheart:
+    description: Withdraw hearts into heart items
+    usage: /withdrawheart [amount]
+    aliases: [wh]
+  revive:
+    description: Revive an eliminated player
+    usage: /revive <player>
+  lifesteal:
+    description: LifeSteal administration
+    usage: /lifesteal <subcommand>
+    aliases: [ls, lifestealz, lsz]
+permissions:
+  lifesteal.admin:
+    default: op
+  lifesteal.giveheart:
+    default: true
+  lifesteal.giverevive:
+    default: true
+  lifesteal.sethearts:
+    default: true
+  lifesteal.addhearts:
+    default: true
+  lifesteal.removehearts:
+    default: true
+  lifesteal.revive:
+    default: true
+  lifesteal.eliminate:
+    default: true
+  lifesteal.reset:
+    default: true
+  lifesteal.hearts:
+    default: true
+  lifesteal.list:
+    default: true
+  lifesteal.reload:
+    default: true
