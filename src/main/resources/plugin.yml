@@ -1,7 +1,7 @@
 name: LifeSteal
 version: '${project.version}'
 main: dev.lifesteal.LifeStealPlugin
-api-version: '26.3'
+api-version: '26.2'
 author: WebsiteDevelopmentStudios
 description: Configurable LifeSteal plugin with isolated world state.
 commands:
